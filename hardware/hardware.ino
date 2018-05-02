@@ -1,9 +1,7 @@
-#define BOARD_TYPE  "arduino uno"
-#define PIN_SDA   8
-#define PIN_SCL   9
+#include "define.h"
 
 #include <Adafruit_ssd1306syp.h>
-Adafruit_ssd1306syp display(SDA_PIN,SCL_PIN);
+Adafruit_ssd1306syp display(PIN_SDA, PIN_SCL);
 
 void setup() {
   delay(1000);
