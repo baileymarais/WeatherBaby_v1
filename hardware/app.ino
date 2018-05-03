@@ -81,8 +81,8 @@ unsigned long lastvalue = 0;
 
 void loop() {
   char s[100] = {0};
-  // 假设从：1525245195 => 2018/5/2 15:13:15开始
-  convert_timestamp(1525245195 + (int)(millis()/1000), 100, s);
+  // 假设从：1525251145 => 2018/5/2 16:52:25开始
+  convert_timestamp(1525251145 + (int)(millis()/1000), 100, s);
 
   Serial.println(s);
 
