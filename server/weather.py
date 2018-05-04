@@ -72,8 +72,10 @@ class weather:
         if self.__datasourceId == "":
             return None
 
-        sql = "select forecast_date,forecast_min,forecast_max,updated from weatherlist inner join citylist on weatherlist.citylist_id = citylist.id where cityname = '{0}' and date_add(updated,interval 12 hour)  >= now() order by forecast_date desc limit {1}".format(cityname, days)
-        sql = "select * from ({0}) as t1 order by forecast_date asc".format(sql)
+        sql = "select forecast_date,forecast_min,forecast_max,updated from weatherlist inner join citylist on weatherlist.citylist_id = citylist.id where cityname = '{0}' and date_add(updated,interval 12 hour)  >= now() order by forecast_date desc limit 7".format(cityname)
+        sql = "select * from ({0}) as t1 order by forecast_date asc limit {1}".format(sql, days)
+
+        print(sql)
         self.__cursor.execute(sql)
         result = self.__cursor.fetchall()
         if result and len(result) > 0:
