@@ -29,27 +29,27 @@ class weather:
 
 
     """
-    将某一个城市加入任务列表，如果任务列表中有这个城市，那么返回空字符串，否则返回对应的城市编号
+    将某一个城市加入任务列表，并且返回对应的城市编号
     """
-    def cachecity(self, cityname):
+    def create_city(self, cityname):
         if self.__datasourceId == "":
             return ""
 
-        url = "http://toy1.weather.com.cn/search?cityname=%s&r=%d" % (cityname, time.time())
-        r = requests.get(url, headers=self.__headers, timeout=10)
-        if 200 == r.status_code:
-            r.encoding = "utf-8"
-            http_result = json.loads(r.text[1:len(r.text)-1])
-            if http_result and len(http_result) > 0:
-                cityid = http_result[0]['ref'].split("~")[0]
+        sql = "select citynum from citylist where datasource_id={0} and cityname='{1}'".format(
+            self.__datasourceId,
+            cityname
+        )
+        self.__cursor.execute(sql)
+        existeditem = self.__cursor.fetchone()
+        if existeditem == None or len(existeditem) == 0:
+            url = "http://toy1.weather.com.cn/search?cityname=%s&r=%d" % (cityname, time.time())
+            r = requests.get(url, headers=self.__headers, timeout=10)
+            if 200 == r.status_code:
+                r.encoding = "utf-8"
+                http_result = json.loads(r.text[1:len(r.text) - 1])
+                if http_result and len(http_result) > 0:
+                    cityid = http_result[0]['ref'].split("~")[0]
 
-                sql = "select id from citylist where datasource_id={0} and citynum='{1}'".format(
-                    self.__datasourceId,
-                    cityid
-                )
-                self.__cursor.execute(sql)
-                existeditem = self.__cursor.fetchone()
-                if existeditem == None or len(existeditem) == 0:
                     sql = "insert into citylist(datasource_id,cityname,citynum,dataurl) values({0},'{1}','{2}', 'http://www.weather.com.cn/weather/{2}.shtml')".format(
                         self.__datasourceId,
                         cityname,
@@ -57,18 +57,23 @@ class weather:
                     )
                     self.__cursor.execute(sql)
                     self.__db.commit()
-                    return cityid
+        elif existeditem and len(existeditem) > 0:
+            return existeditem[0]
+
         return ""
 
 
     """
     获取城市天气预报，如果成功就返回数据集，否则返回None
+    只会返回最近12小时有更新的
+    返回数据集顺序：{预测的日期,最低,最高,预测数据的更新时间}
     """
-    def getweather(self, cityname):
+    def getweather(self, cityname, days = 7):
         if self.__datasourceId == "":
             return None
 
-        sql = "select forecast_date,forecast_min,forecast_max,updated from weatherlist inner join citylist on weatherlist.citylist_id = citylist.id where cityname = '{0}' order by forecast_date desc limit 7".format(cityname)
+        sql = "select forecast_date,forecast_min,forecast_max,updated from weatherlist inner join citylist on weatherlist.citylist_id = citylist.id where cityname = '{0}' and date_add(updated,interval 12 hour)  >= now() order by forecast_date desc limit {1}".format(cityname, days)
+        sql = "select * from ({0}) as t1 order by forecast_date asc".format(sql)
         self.__cursor.execute(sql)
         result = self.__cursor.fetchall()
         if result and len(result) > 0:
@@ -80,15 +85,15 @@ class weather:
     """
     重新刷新数据库
     datasourceId: 数据源在数据库中的编号
-    cityidList: 指定更新某一部分城市编号
+    cityidList: 指定更新某一部分城市编号，必须传入list列表
     """
-    def rebase(self, cityidList = None):
-        if self.__datasourceId == "":
+    def rebase(self, cityidList = None, days = 7):
+        if self.__datasourceId == ""  or not isinstance(cityidList, list):
             return
 
         sql = "select datasource_id, cityname,dataurl,id from citylist where datasource_id={0}".format(self.__datasourceId)
         if cityidList and len(cityidList) > 0:
-            sql += "and citynum in " + str(cityidList).replace("[", "(").replace("]",")")
+            sql += " and citynum in " + str(cityidList).replace("[", "(").replace("]", ")")
 
         self.__cursor.execute(sql)
         data = self.__cursor.fetchall()
@@ -98,10 +103,13 @@ class weather:
             if 200 == r.status_code:
                 r.encoding = "utf-8"
                 soup = BeautifulSoup(r.text, "html.parser")
-                weatherlist = soup.find_all('li', class_=["sky skyid lv3 on", "sky skyid lv3", "sky skyid lv2 on", "sky skyid lv2"])
+                weatherlist = soup.find_all('li', class_=["sky skyid lv3 on",
+                                                          "sky skyid lv3",
+                                                          "sky skyid lv2 on",
+                                                          "sky skyid lv2"])
 
                 # 更新最近7天的天气
-                if len(weatherlist) == 7:
+                if len(weatherlist) == days:
                     dayindex = 0
                     for everyday in weatherlist:
                         if everyday.h1:
@@ -122,6 +130,8 @@ class weather:
                                     "forecast_max=" + forecast_max + "," if len(forecast_max) > 0 else "",
                                     forecast_id[0]
                                 )
+
+                                self.__cursor.execute(sql)
                             else:
                                 sql = 'insert into weatherlist(forecast_date, forecast_min, forecast_max, updated, citylist_id) values("{0}",{1},{2},now(), {3});'.format(
                                     time.strftime("%Y-%m-%d", localtime),
@@ -131,6 +141,7 @@ class weather:
                                 )
 
                                 self.__cursor.execute(sql)
+
                             dayindex += 1
 
                     self.__db.commit()
