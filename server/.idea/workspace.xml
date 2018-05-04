@@ -10,23 +10,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/server$main.coverage" NAME="main Coverage Results" MODIFIED="1525336103477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/server$main.coverage" NAME="main Coverage Results" MODIFIED="1525338758147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="277">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
-                <marker date="1525336099497" expanded="true" signature="487:541" ph="select datas... citylist" />
-                <marker date="1525336099497" expanded="true" signature="626:663" ph="select name datasource" />
-                <marker date="1525336099497" expanded="true" signature="626:666" ph="select name datasource" />
-                <marker date="1525336099497" expanded="true" signature="1565:1619" ph="select id fr... weatherlist" />
-                <marker date="1525336099497" expanded="true" signature="1565:1636" ph="select id fr... weatherlist" />
-                <marker date="1525336099497" expanded="true" signature="2036:2090" ph="update weatherlist... " />
-                <marker date="1525336099497" expanded="true" signature="2463:2584" ph="insert into weatherlist... " />
+                <element signature="e#169#200#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,17 +29,19 @@
       <file leaf-file-name="weather.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weather.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="672">
+              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding>
                 <element signature="e#88#103#0" expanded="true" />
-                <marker date="1525335961959" expanded="true" signature="658:715" ph="select id fr... datasource" />
-                <marker date="1525335961959" expanded="true" signature="1482:1547" ph="select id fr... citylist" />
-                <marker date="1525335961959" expanded="true" signature="1833:1964" ph="insert into citylist... " />
-                <marker date="1525335961959" expanded="true" signature="2447:2523" ph="select datas... citylist" />
-                <marker date="1525335961959" expanded="true" signature="3658:3729" ph="select id fr... weatherlist" />
-                <marker date="1525335961959" expanded="true" signature="4159:4213" ph="update weatherlist... " />
-                <marker date="1525335961959" expanded="true" signature="4598:4719" ph="insert into weatherlist... " />
+                <marker date="1525337590195" expanded="true" signature="658:715" ph="select id fr... datasource" />
+                <marker date="1525337590195" expanded="true" signature="1482:1547" ph="select id fr... citylist" />
+                <marker date="1525337590195" expanded="true" signature="1833:1964" ph="insert into citylist... " />
+                <marker date="1525337590195" expanded="true" signature="2409:2416" ph="select forec... weatherlist" />
+                <marker date="1525337590195" expanded="true" signature="2409:2600" ph="select forec... weatherlist" />
+                <marker date="1525337590195" expanded="true" signature="2985:3061" ph="select datas... citylist" />
+                <marker date="1525337590195" expanded="true" signature="4196:4267" ph="select id fr... weatherlist" />
+                <marker date="1525337590195" expanded="true" signature="4697:4751" ph="update weatherlist... " />
+                <marker date="1525337590195" expanded="true" signature="5136:5257" ph="insert into weatherlist... " />
               </folding>
             </state>
           </provider>
@@ -54,8 +50,8 @@
       <file leaf-file-name="conf.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            <state relative-caret-position="165">
+              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -64,8 +60,8 @@
       <file leaf-file-name="testSearcher.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/ip2region-master/binding/python3/testSearcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="34" />
+            <state relative-caret-position="291">
+              <caret line="61" column="34" lean-forward="true" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
               <folding>
                 <element signature="e#130#158#0" expanded="true" />
               </folding>
@@ -87,6 +83,8 @@
       <find>requests</find>
       <find>fetchone</find>
       <find>datasource</find>
+      <find>hand</find>
+      <find>handle(</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -256,16 +254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/ip2region-master/binding/python3/testSearcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="34" />
-          <folding>
-            <element signature="e#130#158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-301">
@@ -282,43 +270,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/ip2region-master/binding/python3/testSearcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="61" column="34" lean-forward="true" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+          <folding>
+            <element signature="e#130#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socketserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="691" column="38" lean-forward="false" selection-start-line="691" selection-start-column="38" selection-end-line="691" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weather.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="672">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
             <element signature="e#88#103#0" expanded="true" />
-            <marker date="1525335961959" expanded="true" signature="658:715" ph="select id fr... datasource" />
-            <marker date="1525335961959" expanded="true" signature="1482:1547" ph="select id fr... citylist" />
-            <marker date="1525335961959" expanded="true" signature="1833:1964" ph="insert into citylist... " />
-            <marker date="1525335961959" expanded="true" signature="2447:2523" ph="select datas... citylist" />
-            <marker date="1525335961959" expanded="true" signature="3658:3729" ph="select id fr... weatherlist" />
-            <marker date="1525335961959" expanded="true" signature="4159:4213" ph="update weatherlist... " />
-            <marker date="1525335961959" expanded="true" signature="4598:4719" ph="insert into weatherlist... " />
+            <marker date="1525337590195" expanded="true" signature="658:715" ph="select id fr... datasource" />
+            <marker date="1525337590195" expanded="true" signature="1482:1547" ph="select id fr... citylist" />
+            <marker date="1525337590195" expanded="true" signature="1833:1964" ph="insert into citylist... " />
+            <marker date="1525337590195" expanded="true" signature="2409:2416" ph="select forec... weatherlist" />
+            <marker date="1525337590195" expanded="true" signature="2409:2600" ph="select forec... weatherlist" />
+            <marker date="1525337590195" expanded="true" signature="2985:3061" ph="select datas... citylist" />
+            <marker date="1525337590195" expanded="true" signature="4196:4267" ph="select id fr... weatherlist" />
+            <marker date="1525337590195" expanded="true" signature="4697:4751" ph="update weatherlist... " />
+            <marker date="1525337590195" expanded="true" signature="5136:5257" ph="insert into weatherlist... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="277">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <marker date="1525336099497" expanded="true" signature="487:541" ph="select datas... citylist" />
-            <marker date="1525336099497" expanded="true" signature="626:663" ph="select name datasource" />
-            <marker date="1525336099497" expanded="true" signature="626:666" ph="select name datasource" />
-            <marker date="1525336099497" expanded="true" signature="1565:1619" ph="select id fr... weatherlist" />
-            <marker date="1525336099497" expanded="true" signature="1565:1636" ph="select id fr... weatherlist" />
-            <marker date="1525336099497" expanded="true" signature="2036:2090" ph="update weatherlist... " />
-            <marker date="1525336099497" expanded="true" signature="2463:2584" ph="insert into weatherlist... " />
+            <element signature="e#169#200#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="165">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding />
         </state>
       </provider>

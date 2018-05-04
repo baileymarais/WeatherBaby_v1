@@ -62,6 +62,22 @@ class weather:
 
 
     """
+    获取城市天气预报，如果成功就返回数据集，否则返回None
+    """
+    def getweather(self, cityname):
+        if self.__datasourceId == "":
+            return None
+
+        sql = "select forecast_date,forecast_min,forecast_max,updated from weatherlist inner join citylist on weatherlist.citylist_id = citylist.id where cityname = '{0}' order by forecast_date desc limit 7".format(cityname)
+        self.__cursor.execute(sql)
+        result = self.__cursor.fetchall()
+        if result and len(result) > 0:
+            return result
+
+        return None
+
+
+    """
     重新刷新数据库
     datasourceId: 数据源在数据库中的编号
     cityidList: 指定更新某一部分城市编号
