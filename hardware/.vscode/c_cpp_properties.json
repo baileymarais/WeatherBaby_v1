@@ -3,7 +3,8 @@
         {
             "name": "Mac",
             "includePath": [
-                "/Users/baileymarais/Library/Arduino15/packages/arduino/hardware/avr/1.6.21/cores/arduino"
+                "/Users/baileymarais/Library/Arduino15/packages/arduino/hardware/avr/1.6.21/cores/arduino",
+                "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/include"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": false,
