@@ -10,15 +10,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/server$main.coverage" NAME="main Coverage Results" MODIFIED="1525429573333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/server$main.coverage" NAME="main Coverage Results" MODIFIED="1525687316115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="72" column="41" lean-forward="true" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+            <state relative-caret-position="39">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
                 <element signature="e#155#166#0" expanded="true" />
               </folding>
@@ -26,26 +26,36 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="socketserver.py" pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socketserver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="466" column="0" lean-forward="false" selection-start-line="466" selection-start-column="0" selection-end-line="466" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="weather.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weather.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="210">
+              <caret line="78" column="24" lean-forward="true" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
               <folding>
                 <element signature="e#88#103#0" expanded="true" />
-                <marker date="1525429569955" expanded="true" signature="658:715" ph="select id fr... datasource" />
-                <marker date="1525429569955" expanded="true" signature="1052:1123" ph="select cityn... citylist" />
-                <marker date="1525429569955" expanded="true" signature="1795:1926" ph="insert into citylist... " />
-                <marker date="1525429569955" expanded="true" signature="2488:2495" ph="select forec... weatherlist" />
-                <marker date="1525429569955" expanded="true" signature="2488:2721" ph="select forec... weatherlist" />
-                <marker date="1525429569955" expanded="true" signature="2488:2728" ph="select forec... weatherlist" />
-                <marker date="1525429569955" expanded="true" signature="2762:2814" ph="select * fro... t1" />
-                <marker date="1525429569955" expanded="true" signature="2762:2821" ph="select * fro... missing_value" />
-                <marker date="1525429569955" expanded="true" signature="2762:3026" ph="select * fro... t1" />
-                <marker date="1525429569955" expanded="true" signature="3288:3364" ph="select datas... citylist" />
-                <marker date="1525429569955" expanded="true" signature="4678:4749" ph="select id fr... weatherlist" />
-                <marker date="1525429569955" expanded="true" signature="5179:5233" ph="update weatherlist... " />
-                <marker date="1525429569955" expanded="true" signature="5678:5799" ph="insert into weatherlist... " />
+                <marker date="1525684339767" expanded="true" signature="658:715" ph="select id fr... datasource" />
+                <marker date="1525684339767" expanded="true" signature="1052:1123" ph="select cityn... citylist" />
+                <marker date="1525684339767" expanded="true" signature="1795:1926" ph="insert into citylist... " />
+                <marker date="1525684339767" expanded="true" signature="2488:2495" ph="select forec... weatherlist" />
+                <marker date="1525684339767" expanded="true" signature="2488:2721" ph="select forec... weatherlist" />
+                <marker date="1525684339767" expanded="true" signature="2488:2728" ph="select forec... weatherlist" />
+                <marker date="1525684339767" expanded="true" signature="2762:2814" ph="select * fro... t1" />
+                <marker date="1525684339767" expanded="true" signature="2762:2821" ph="select * fro... missing_value" />
+                <marker date="1525684339767" expanded="true" signature="2762:3007" ph="select * fro... t1" />
+                <marker date="1525684339767" expanded="true" signature="3269:3345" ph="select datas... citylist" />
+                <marker date="1525684339767" expanded="true" signature="4812:4883" ph="select id fr... weatherlist" />
+                <marker date="1525684339767" expanded="true" signature="5313:5367" ph="update weatherlist... " />
+                <marker date="1525684339767" expanded="true" signature="5812:5933" ph="insert into weatherlist... " />
               </folding>
             </state>
           </provider>
@@ -212,7 +222,7 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26973686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26973686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -221,7 +231,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3991228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -240,7 +250,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/weather.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -315,43 +332,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socketserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="696" column="16" lean-forward="true" selection-start-line="696" selection-start-column="16" selection-end-line="696" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="72" column="41" lean-forward="true" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+        <state relative-caret-position="39">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <element signature="e#155#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socketserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="466" column="0" lean-forward="false" selection-start-line="466" selection-start-column="0" selection-end-line="466" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weather.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="210">
+          <caret line="78" column="24" lean-forward="true" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
           <folding>
             <element signature="e#88#103#0" expanded="true" />
-            <marker date="1525429569955" expanded="true" signature="658:715" ph="select id fr... datasource" />
-            <marker date="1525429569955" expanded="true" signature="1052:1123" ph="select cityn... citylist" />
-            <marker date="1525429569955" expanded="true" signature="1795:1926" ph="insert into citylist... " />
-            <marker date="1525429569955" expanded="true" signature="2488:2495" ph="select forec... weatherlist" />
-            <marker date="1525429569955" expanded="true" signature="2488:2721" ph="select forec... weatherlist" />
-            <marker date="1525429569955" expanded="true" signature="2488:2728" ph="select forec... weatherlist" />
-            <marker date="1525429569955" expanded="true" signature="2762:2814" ph="select * fro... t1" />
-            <marker date="1525429569955" expanded="true" signature="2762:2821" ph="select * fro... missing_value" />
-            <marker date="1525429569955" expanded="true" signature="2762:3026" ph="select * fro... t1" />
-            <marker date="1525429569955" expanded="true" signature="3288:3364" ph="select datas... citylist" />
-            <marker date="1525429569955" expanded="true" signature="4678:4749" ph="select id fr... weatherlist" />
-            <marker date="1525429569955" expanded="true" signature="5179:5233" ph="update weatherlist... " />
-            <marker date="1525429569955" expanded="true" signature="5678:5799" ph="insert into weatherlist... " />
+            <marker date="1525684339767" expanded="true" signature="658:715" ph="select id fr... datasource" />
+            <marker date="1525684339767" expanded="true" signature="1052:1123" ph="select cityn... citylist" />
+            <marker date="1525684339767" expanded="true" signature="1795:1926" ph="insert into citylist... " />
+            <marker date="1525684339767" expanded="true" signature="2488:2495" ph="select forec... weatherlist" />
+            <marker date="1525684339767" expanded="true" signature="2488:2721" ph="select forec... weatherlist" />
+            <marker date="1525684339767" expanded="true" signature="2488:2728" ph="select forec... weatherlist" />
+            <marker date="1525684339767" expanded="true" signature="2762:2814" ph="select * fro... t1" />
+            <marker date="1525684339767" expanded="true" signature="2762:2821" ph="select * fro... missing_value" />
+            <marker date="1525684339767" expanded="true" signature="2762:3007" ph="select * fro... t1" />
+            <marker date="1525684339767" expanded="true" signature="3269:3345" ph="select datas... citylist" />
+            <marker date="1525684339767" expanded="true" signature="4812:4883" ph="select id fr... weatherlist" />
+            <marker date="1525684339767" expanded="true" signature="5313:5367" ph="update weatherlist... " />
+            <marker date="1525684339767" expanded="true" signature="5812:5933" ph="insert into weatherlist... " />
           </folding>
         </state>
       </provider>

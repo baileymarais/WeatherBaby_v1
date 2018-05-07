@@ -75,7 +75,6 @@ class weather:
         sql = "select forecast_date,forecast_min,forecast_max,updated from weatherlist inner join citylist on weatherlist.citylist_id = citylist.id where cityname = '{0}' and date_add(updated,interval 12 hour)  >= now() order by forecast_date desc limit 7".format(cityname)
         sql = "select * from ({0}) as t1 order by forecast_date asc limit {1}".format(sql, days)
 
-        print(sql)
         self.__cursor.execute(sql)
         result = self.__cursor.fetchall()
         if result and len(result) > 0:
@@ -105,10 +104,12 @@ class weather:
             if 200 == r.status_code:
                 r.encoding = "utf-8"
                 soup = BeautifulSoup(r.text, "html.parser")
-                weatherlist = soup.find_all('li', class_=["sky skyid lv3 on",
-                                                          "sky skyid lv3",
+                weatherlist = soup.find_all('li', class_=["sky skyid lv3",
+                                                          "sky skyid lv3 on",
+                                                          "sky skyid lv2",
                                                           "sky skyid lv2 on",
-                                                          "sky skyid lv2"])
+                                                          "sky skyid lv1",
+                                                          "sky skyid lv1 on"])
 
                 # 更新最近7天的天气
                 if len(weatherlist) == days:
